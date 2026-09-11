@@ -15,6 +15,7 @@ header {
 }
 
 nav {
+    background-color: #173b56;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,6 +26,7 @@ nav {
 }
 
 nav a {
+    display: block;
     padding: 0.5rem 0.75rem;
     border-radius: 0.25rem;
     color: #fff;
@@ -70,6 +72,7 @@ main img {
     padding: 0.25rem;
     border: 1px solid #cad6df;
     border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
 }
 
 p {
