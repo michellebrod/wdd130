@@ -1,0 +1,148 @@
+```css
+:root {
+    --cor-primaria: #1d4e89;
+    --cor-secundaria: #f4a261;
+    --cor-destaque1: #16324f;
+    --cor-destaque2: #e9c46a;
+
+    --fonte-titulo: "Times New Roman", Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+/* Limita e centraliza o conteúdo da página */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: rgb(20, 19, 19);
+    padding: 16px;
+}
+
+/* Logo */
+header img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navegação */
+nav {
+    margin: 16px;
+    padding: 8px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(8, 0, 0);
+}
+
+/* Títulos */
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Espaçamentos básicos */
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Área principal da imagem hero */
+.hero {
+    position: relative;
+}
+
+/* Imagem principal */
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Título sobre a imagem */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+
+    text-align: center;
+
+    opacity: 0.8;
+    background-color: var(--cor-destaque1);
+    color: white;
+}
+
+/* Caixa de texto sobre a imagem */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+
+    background-color: rgba(151, 184, 125, 0.8);
+    color: var(--cor-destaque1);
+
+    padding: 16px;
+}
+
+/* Imagem pequena dentro do article */
+.hero article img {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-left: 16px;
+}
+
+/* Seções */
+section {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: rgb(7, 0, 0);
+    padding: 16px;
+    text-align: center;
+}
+
+/* Links das redes sociais */
+.redes-sociais a {
+    text-decoration: none;
+}
+
+/* Ícones das redes sociais */
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+}
+```
