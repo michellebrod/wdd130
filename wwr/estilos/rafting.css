@@ -8,20 +8,26 @@
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
+
 /* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 /* Corpo da página */
+
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
 }
 
-/* Limita e centraliza o conteúdo da página */
+
+/* Limita e centraliza o conteúdo */
+
 header,
 main,
 footer {
@@ -29,35 +35,64 @@ footer {
     margin: 0 auto;
 }
 
-/* Cabeçalho */
+
+/* =========================
+   CABEÇALHO
+========================= */
+
 header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+
     background-color: var(--cor-primaria);
     color: var(--cor-destaque2);
+
     padding: 16px;
 }
 
+
 /* Logo */
+
 header img {
     width: 120px;
     height: auto;
 }
 
-/* Navegação */
+
+/* =========================
+   NAVEGAÇÃO
+========================= */
+
 nav {
     margin: 16px;
     padding: 8px;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
     list-style: none;
 }
 
 nav a {
-    text-decoration: none;
     color: var(--cor-destaque2);
+    text-decoration: none;
 }
 
-/* Títulos */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
 h1,
 h2 {
     font-family: var(--fonte-titulo);
@@ -65,81 +100,189 @@ h2 {
     text-align: center;
 }
 
-/* Espaçamentos básicos */
+
+/* Espaçamento básico */
+
 p,
-section,
-article {
+section {
     margin: 16px;
     padding: 8px;
 }
 
-/* Área principal da imagem hero */
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
     position: relative;
 }
 
-/* Imagem principal */
 .hero > img {
     display: block;
+
     width: 100%;
     height: auto;
 }
 
+
 /* Título sobre a imagem */
+
 .hero h1 {
     position: absolute;
+
     top: 20px;
+
     width: 100%;
     padding: 16px;
-    text-align: center;
-    opacity: 0.8;
+
     background-color: var(--cor-destaque1);
     color: white;
+
+    text-align: center;
+    opacity: 0.8;
 }
 
-/* Caixa de texto sobre a imagem */
+
+/* Caixa sobre a imagem */
+
 .hero article {
     position: absolute;
+
     bottom: 20px;
     left: 40px;
     right: 40px;
 
+    padding: 16px;
+
     background-color: var(--cor-secundaria);
     color: var(--cor-destaque1);
-
-    padding: 16px;
 }
 
-/* Imagem pequena dentro do article */
+
+/* Imagem do article */
+
 .hero article img {
     float: right;
+
     width: 200px;
     height: auto;
+
     margin-left: 16px;
 }
 
-/* Seções */
-section {
+
+/* =========================
+   HISTÓRIA
+========================= */
+
+.historia {
     margin-top: 24px;
     margin-bottom: 24px;
 }
 
-/* Rodapé */
-footer {
-    background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
-    padding: 16px;
+.historia h2 {
+    margin-bottom: 16px;
+}
+
+.historia-conteudo {
+    display: grid;
+
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.historia-conteudo img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   AVENTURAS
+========================= */
+
+.aventuras {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.aventuras h2 {
+    grid-column: 1 / 6;
+
+    margin-bottom: 16px;
+}
+
+.aventuras figure {
     text-align: center;
 }
 
-/* Links das redes sociais */
-.redes-sociais a {
+.aventuras figure img {
+    display: block;
+
+    width: 100%;
+    height: 120px;
+
+    object-fit: cover;
+}
+
+.aventuras figcaption {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
+
+    padding: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.socialmedia {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
     text-decoration: none;
 }
 
-/* Ícones das redes sociais */
-.redes-sociais img {
+.socialmedia img {
+    display: block;
+
     width: 40px;
     height: 40px;
 }
-
