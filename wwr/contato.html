@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Entre em contato com a Rafting em Corredeiras para tirar dúvidas, obter informações sobre reservas e conhecer nossos serviços de rafting."
+    >
+
+    <meta
+        name="author"
+        content="Michelle Barbosa Rodrigues Amorim"
+    >
+
+    <title>Fale Conosco | Rafting em Corredeiras</title>
+
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img
+            src="imagens/01logo.png"
+            alt="Logotipo da empresa de rafting"
+        >
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Página Inicial</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html">Sobre Nós</a>
+                </li>
+
+                <li>
+                    <a href="passeios.html">Passeios</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="contato-titulo">
+
+            <h1>Fale Conosco</h1>
+
+            <p>
+                Tem alguma dúvida ou deseja saber mais sobre nossas aventuras?
+                Entre em contato com nossa equipe. Será um prazer ajudar!
+            </p>
+
+        </section>
+
+
+        <section class="contato-info">
+
+            <div class="dados-empresa">
+
+                <h2>Informações de Contato</h2>
+
+                <p>
+                    <strong>Endereço:</strong>
+                    Estrada das Corredeiras, 1200 - São Paulo, SP
+                </p>
+
+                <p>
+                    <strong>Telefone:</strong>
+                    (11) 4000-2026
+                </p>
+
+                <p>
+                    <strong>E-mail:</strong>
+                    contato@raftemcorredeiras.com.br
+                </p>
+
+            </div>
+
+
+            <div class="mapa">
+
+                <iframe
+                    src="https://www.google.com/maps?q=São+Paulo,+SP&output=embed"
+                    width="450"
+                    height="300"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa da localização da Rafting em Corredeiras">
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <section class="equipe">
+
+            <h2>Conheça Nossa Equipe</h2>
+
+            <div class="equipe-container">
+
+                <figure>
+                    <img
+                        src="imagens/funcionario1.jpg"
+                        alt="Instrutor de rafting"
+                    >
+                    <figcaption>
+                        Lucas Silva - Instrutor de Rafting
+                    </figcaption>
+                </figure>
+
+
+                <figure>
+                    <img
+                        src="imagens/funcionario2.jpg"
+                        alt="Gerente de atendimento"
+                    >
+                    <figcaption>
+                        Mariana Santos - Gerente de Atendimento
+                    </figcaption>
+                </figure>
+
+
+                <figure>
+                    <img
+                        src="imagens/funcionario3.jpg"
+                        alt="Guia de rafting"
+                    >
+                    <figcaption>
+                        Rafael Oliveira - Guia de Rafting
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <section class="formulario-contato">
+
+            <h2>Envie uma Mensagem</h2>
+
+            <form>
+
+                <div class="campo-formulario">
+
+                    <label for="nome">
+                        Nome:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo-formulario">
+
+                    <label for="email">
+                        E-mail:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <fieldset>
+
+                    <legend>
+                        Qual é a finalidade da sua mensagem?
+                    </legend>
+
+
+                    <div class="radio-opcao">
+
+                        <input
+                            type="radio"
+                            id="geral"
+                            name="finalidade"
+                            value="consulta-geral"
+                            required
+                        >
+
+                        <label for="geral">
+                            Consulta Geral
+                        </label>
+
+                    </div>
+
+
+                    <div class="radio-opcao">
+
+                        <input
+                            type="radio"
+                            id="reserva"
+                            name="finalidade"
+                            value="pergunta-reserva"
+                        >
+
+                        <label for="reserva">
+                            Pergunta sobre Reserva
+                        </label>
+
+                    </div>
+
+
+                    <div class="radio-opcao">
+
+                        <input
+                            type="radio"
+                            id="sugestao"
+                            name="finalidade"
+                            value="sugestao-site"
+                        >
+
+                        <label for="sugestao">
+                            Sugestão de Site
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <div class="campo-formulario">
+
+                    <label for="mensagem">
+                        Mensagem:
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="newsletter">
+
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                    >
+
+                    <label for="newsletter">
+                        Quero receber a newsletter mensal
+                    </label>
+
+                </div>
+
+
+                <button type="submit">
+                    Enviar Mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Rafting em Corredeiras |
+            Michelle Barbosa Rodrigues Amorim
+        </p>
+
+        <nav class="socialmedia">
+
+            <a href="https://facebook.com">
+                <img
+                    src="imagens/facebook.png"
+                    alt="Ícone do Facebook"
+                >
+            </a>
+
+            <a href="https://linkedin.com">
+                <img
+                    src="imagens/icons8-linkedin-48.png"
+                    alt="Ícone do LinkedIn"
+                >
+            </a>
+
+            <a href="https://instagram.com">
+                <img
+                    src="imagens/instagram.png"
+                    alt="Ícone do Instagram"
+                >
+            </a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
