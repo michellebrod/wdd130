@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1em;
+    color: #5c4033;
+    background-color: #fdf8f4;
+}
+
+header {
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 2rem 0;
+    font-size: 2.1em;
+    color: #8b5e4a;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #dbc7b6;
+    border-radius: 20px;
+    background-color: #f6efe7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid #d9c2b0;
+    border-radius: 16px;
+    background-color: #fffaf7;
+}
+
+legend {
+    padding: 0 0.8rem;
+    color: #a2674c;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-item label {
+    text-align: right;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    color: #6d4c41;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #d7b8a5;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #5c4033;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c98b6b;
+    box-shadow: 0 0 0 3px rgba(201, 139, 107, 0.2);
+}
+
+.checkbox-item {
+    grid-template-columns: 1fr 40px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.textarea-item {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.textarea-item label {
+    text-align: center;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    margin: 1rem auto 0;
+    background-color: #c98b6b;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #a2674c;
+}
+
+footer {
+    width: 900px;
+    margin: 1.5rem auto 0;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.8em;
+    color: #8b6b5c;
+    border-top: 1px solid #d9c2b0;
+}
