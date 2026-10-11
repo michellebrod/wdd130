@@ -36,9 +36,7 @@ footer {
 }
 
 
-/* =========================
-   CABEÇALHO
-========================= */
+/* CABEÇALHO */
 
 header {
     display: grid;
@@ -60,9 +58,7 @@ header img {
 }
 
 
-/* =========================
-   NAVEGAÇÃO
-========================= */
+/* NAVEGAÇÃO */
 
 nav {
     margin: 16px;
@@ -89,9 +85,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   TÍTULOS
-========================= */
+/* TÍTULOS */
 
 h1,
 h2 {
@@ -110,9 +104,7 @@ section {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     position: relative;
@@ -172,9 +164,7 @@ section {
 }
 
 
-/* =========================
-   HISTÓRIA
-========================= */
+/* HISTÓRIA */
 
 .historia {
     margin-top: 24px;
@@ -200,9 +190,7 @@ section {
 }
 
 
-/* =========================
-   AVENTURAS
-========================= */
+/* AVENTURAS */
 
 .aventuras {
     display: grid;
@@ -239,9 +227,7 @@ section {
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
+/* RODAPÉ */
 
 footer {
     display: flex;
@@ -260,9 +246,7 @@ footer p {
 }
 
 
-/* =========================
-   REDES SOCIAIS
-========================= */
+/* REDES SOCIAIS */
 
 .socialmedia {
     display: flex;
@@ -287,9 +271,7 @@ footer p {
     height: 40px;
 }
 
-/* =========================
-   PÁGINA FALE CONOSCO
-========================= */
+/* PÁGINA FALE CONOSCO */
 
 .contato-titulo {
     text-align: center;
@@ -441,4 +423,294 @@ footer p {
 
 .formulario-contato button:hover {
     opacity: 0.85;
+}
+
+/*  PÁGINA INICIAL */
+
+.hero-inicio {
+    margin-bottom: 2rem;
+}
+
+
+/* Chamada para ação */
+
+.chamada-inicio {
+    margin: 2rem 16px;
+    padding: 2rem;
+
+    text-align: center;
+
+    background-color: var(--cor-destaque2);
+    border-radius: 8px;
+}
+
+.chamada-inicio h2 {
+    margin-bottom: 1rem;
+}
+
+.chamada-inicio p {
+    max-width: 650px;
+    margin: 0 auto 1rem;
+}
+
+
+/* Botões de chamada para ação */
+
+.botao-acao {
+    display: inline-block;
+
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+
+    background-color: var(--cor-primaria);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+
+.botao-acao:hover {
+    background-color: var(--cor-destaque1);
+    text-decoration: none;
+}
+
+
+/* NEWSLETTER DA PÁGINA INICIAL */
+
+.newsletter-inicio {
+    margin: 2rem 16px;
+    padding: 2rem;
+
+    background-color: #f4f1ec;
+
+    border-radius: 8px;
+}
+
+.newsletter-inicio h2 {
+    margin-bottom: 1rem;
+}
+
+.newsletter-inicio > p {
+    max-width: 650px;
+
+    margin: 0 auto 1.5rem;
+
+    text-align: center;
+}
+
+.newsletter-inicio form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr auto;
+
+    gap: 1rem;
+
+    align-items: end;
+}
+
+.campo-newsletter {
+    display: grid;
+
+    gap: 0.5rem;
+}
+
+.campo-newsletter label {
+    font-weight: bold;
+}
+
+.campo-newsletter input {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    border: 1px solid #777;
+    border-radius: 6px;
+
+    font-size: 1rem;
+}
+
+.newsletter-inicio button {
+    padding: 0.75rem 1.5rem;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--cor-primaria);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.newsletter-inicio button:hover {
+    background-color: var(--cor-destaque1);
+}
+
+
+/* GRID DA PÁGINA INICIAL */
+
+.inicio-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1.5rem;
+
+    align-items: center;
+
+    margin: 2rem 16px;
+    padding: 0;
+}
+
+.inicio-texto {
+    padding: 1.5rem;
+}
+
+.inicio-texto h2 {
+    margin-bottom: 1rem;
+}
+
+.inicio-texto p {
+    margin: 0;
+    padding: 0;
+
+    line-height: 1.6;
+}
+
+.inicio-imagem img {
+    display: block;
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+/* PÁGINA PASSEIOS */
+
+.passeios-titulo {
+    margin: 2rem 16px;
+
+    text-align: center;
+}
+
+.passeios-titulo h1 {
+    margin-bottom: 1rem;
+}
+
+.passeios-titulo p {
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+
+/* Cards dos passeios */
+
+.passeios-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    margin: 2rem 16px;
+    padding: 0;
+}
+
+.passeio-card {
+    overflow: hidden;
+
+    background-color: #f4f1ec;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.passeio-card img {
+    display: block;
+
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+}
+
+.passeio-card h2 {
+    margin: 1rem;
+
+    font-size: 1.3rem;
+}
+
+.passeio-card p {
+    margin: 0.75rem 1rem;
+    padding: 0;
+
+    line-height: 1.5;
+}
+
+
+/* TABELA DE PASSEIOS */
+
+.tabela-passeios {
+    margin: 3rem 16px;
+}
+
+.tabela-passeios h2 {
+    margin-bottom: 1.5rem;
+}
+
+.tabela-passeios table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    padding: 0.8rem;
+
+    border: 1px solid #999;
+
+    text-align: center;
+}
+
+.tabela-passeios th {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.tabela-passeios tbody tr:nth-child(even) {
+    background-color: #f4f1ec;
+}
+
+
+/* CHAMADA PARA CONTATO */
+
+.chamada-contato {
+    margin: 3rem 16px;
+    padding: 2rem;
+
+    text-align: center;
+
+    background-color: var(--cor-destaque2);
+
+    border-radius: 8px;
+}
+
+.chamada-contato h2 {
+    margin-bottom: 1rem;
+}
+
+.chamada-contato p {
+    max-width: 650px;
+
+    margin: 0 auto 1rem;
 }
